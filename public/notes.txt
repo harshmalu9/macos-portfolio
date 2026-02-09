@@ -1,0 +1,133 @@
+/**
+ * @file: profile.config.ts
+ * @author: Harsh Malu
+ * @summary: Developer exploring full-stack systems, low-level computing, and applied AI.
+ */
+
+// --------------------------------------------------
+// 1. CORE DEPENDENCIES & SKILLS
+// --------------------------------------------------
+
+const TECH_STACK = {
+  frontend: [
+    "React.js",        // actively building UI components
+    "HTML/CSS/SCSS",   // layout + styling work (portfolio, dock UI)
+    "JavaScript",
+    "shadcn/ui"
+  ],
+  backend: [
+    "Node.js",         // server-side learning & usage
+    "SQL / DB Design", // DBMS projects (Blood Bank, Duty Mgmt)
+    "PostgreSQL / MySQL",
+  ],
+  systems: [
+    "C++",             // coursework + problem solving
+    "x86 Assembly",    // GDTR, MMU, Pentium architecture
+    "8051 Microcontroller Programming"
+  ],
+  tools: [
+    "Git/GitHub",
+    "Linux",
+    "Docker (basic exposure)",
+    "Figma",
+    "VS Code"
+  ],
+  domains: [
+    "AI/ML (learning phase)",
+    "Ethical Hacking (learning phase)",
+    "Multimodal Transport Systems Research"
+  ]
+};
+
+// --------------------------------------------------
+// 2. EXPERIENCE LOG (Reverse Chronological)
+// --------------------------------------------------
+
+class ProfessionalHistory {
+
+  /**
+   * @period 2024 - Present
+   */
+  public async Academic_and_Project_Work(): Promise<Impact> {
+    const role = "Undergraduate Developer & Builder";
+
+    const teaching = [
+      "Organized Python workshop for first-year students",
+      "Created beginner-friendly learning materials & exercises"
+    ];
+
+    const projects = [
+      "Railway station navigation web app (hackathon)",
+      "Database management system implementations",
+      "Assembly-level microprocessor programming",
+      "UI component development using React"
+    ];
+
+    const focus = [
+      "Strengthening full-stack foundations",
+      "Exploring AI/ML pathways",
+      "Developing real-world system thinking"
+    ];
+
+    return { role, teaching, projects, focus };
+  }
+
+  /**
+   * @period 2023 - 2024
+   */
+  public Hackathon_and_Technical_Initiatives(): void {
+    this.activities = [
+      "Participated in hackathon building transport navigation ecosystem",
+      "Researched multimodal hub expansion potential",
+      "Developed prototypes involving QR-based navigation"
+    ];
+
+    this.skillsGained = [
+      "Rapid prototyping",
+      "Team collaboration",
+      "Problem scoping",
+      "Architecture ideation"
+    ];
+  }
+}
+
+// --------------------------------------------------
+// 3. COMPETITIVE / TECHNICAL ENGAGEMENT
+// --------------------------------------------------
+
+interface TechnicalParticipation {
+  activity: string;
+  focus: string;
+}
+
+const involvement: TechnicalParticipation[] = [
+  {
+    activity: "University Hackathon Participation",
+    focus: "Transport ecosystem navigation platform"
+  },
+  {
+    activity: "Workshop Organization",
+    focus: "Python fundamentals for beginners"
+  }
+];
+
+// --------------------------------------------------
+// 4. ACADEMIC BACKGROUND
+// --------------------------------------------------
+
+const education = new Map<string, string>([
+  ["MIT World Peace University", "B.Tech Information Technology (In Progress)"]
+]);
+
+export default new ProfessionalHistory();
+
+
+/*
+# TERMINAL OUTPUT
+# ---------------------------------------
+$ user --status
+> Status: Building skills & open to internships
+> Location: India
+> Focus: Full-stack foundations + Systems + AI/ML exploration
+> Ready.
+*/
